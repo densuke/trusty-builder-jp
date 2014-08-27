@@ -13,8 +13,8 @@
 
 イメージ内でISOイメージを作ります、内部的には `/target` ディレクトリで作業して吐き出すため、ここを任意ディレクトリで上書きマウントしてください。なお、作業中のデータも置かれるため、 **空き容量8GB以上は用意しておいてください**。
 
-  $ TARGET=/path/to/build/iso
-  $ docker run --rm --privileged -v $TARGET:/target densuke/trusty-builder-jp 
+    $ TARGET=/path/to/build/iso
+    $ docker run --rm --privileged -v $TARGET:/target densuke/trusty-builder-jp 
 
 これで放っておくと、 `$TARGET` に binary.hybrid.iso ファイルが出来上がります。 
 煮るなり焼くなりしてください。
@@ -27,19 +27,19 @@
 (2014/8/28追加)
 [http://archive.ubuntulinux.jp/ubuntu/pool/main/u/ubuntu-defaults-ja/](ubuntu-defaults-jaパッケージ)の中身をconfigとしておいているだけですので、内容を確認し、編集した後、
 
-  $ TARGET=/path/to/build/iso
-	$ CUSTOM=/path/to/config
-  $ docker run --rm --privileged -v $TARGET:/target -v $CUSTOM:/builder/config densuke/trusty-builder-jp 
+    $ TARGET=/path/to/build/iso
+   	$ CUSTOM=/path/to/config
+    $ docker run --rm --privileged -v $TARGET:/target -v $CUSTOM:/builder/config densuke/trusty-builder-jp 
 
 というかたちでマウントしてもらえれば反映出来る仕組みです。
 
-  例:
-	$ wget http://archive.ubuntulinux.jp/ubuntu/pool/main/u/ubuntu-defaults-ja/ubuntu-defaults-ja_14.04-0ubuntu1~ja6.dsc
-	$ wget http://archive.ubuntulinux.jp/ubuntu/pool/main/u/ubuntu-defaults-ja/ubuntu-defaults-ja_14.04-0ubuntu1~ja6.tar.gz
-	$ dpkg-source -x ubuntu-defaults-ja_14.04-0ubuntu1~ja6.dsc
-	$ mv * config
-	(いじる)
-  $ docker run --rm --privileged -v $TARGET:/target -v $(PWD)/config:/builder/config densuke/trusty-builder-jp 
+    例:
+    $ wget http://archive.ubuntulinux.jp/ubuntu/pool/main/u/ubuntu-defaults-ja/ubuntu-defaults-ja_14.04-0ubuntu1~ja6.dsc
+    $ wget http://archive.ubuntulinux.jp/ubuntu/pool/main/u/ubuntu-defaults-ja/ubuntu-defaults-ja_14.04-0ubuntu1~ja6.tar.gz
+    $ dpkg-source -x ubuntu-defaults-ja_14.04-0ubuntu1~ja6.dsc
+    $ mv * config
+    (いじる)
+    $ docker run --rm --privileged -v $TARGET:/target -v $(PWD)/config:/builder/config densuke/trusty-builder-jp 
 
 
 # 動作保証について
