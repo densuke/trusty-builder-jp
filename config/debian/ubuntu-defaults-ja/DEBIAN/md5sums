@@ -1,0 +1,16 @@
+df4ec5955723ca8f209a0b0bb05905db  usr/share/doc/ubuntu-defaults-ja/changelog.Debian.gz
+7342b88c81babf3e6a6273c5bb16ef86  usr/share/doc/ubuntu-defaults-ja/copyright
+990867b4d015d71305f031c76c8c4e1a  usr/share/glib-2.0/schemas/20_ubuntu-defaults-ja.gschema.override
+d53c059418154b53822404cc834ecea3  usr/share/ubiquity-slideshow/slides/extra/directory.jsonp
+77f64c50c8acf17e9f097bcb39e7efb0  usr/share/ubiquity-slideshow/slides/extra/ja_JP/accessibility.html
+ea8c7e624b559f371f1bf6a4b9a407c0  usr/share/ubiquity-slideshow/slides/extra/ja_JP/browse.html
+0f29af46993be60725035fe9118a9876  usr/share/ubiquity-slideshow/slides/extra/ja_JP/gethelp.html
+2b4ec15659d49ead1ce742bd014ad6f2  usr/share/ubiquity-slideshow/slides/extra/ja_JP/music.html
+44ba57b6a5806cc961f18a09dc35cfb4  usr/share/ubiquity-slideshow/slides/extra/ja_JP/office.html
+e421a1b22d47fae507cab18a1bfd84b0  usr/share/ubiquity-slideshow/slides/extra/ja_JP/photos.html
+cd7cd76fc344cc4c21f2a9221c390031  usr/share/ubiquity-slideshow/slides/extra/ja_JP/usc.html
+f971721b35ff41b6d6f00857a59c5df9  usr/share/ubiquity-slideshow/slides/extra/ja_JP/welcome.html
+33c842c374b5a766943e590f947a51b8  usr/share/ubuntu-defaults-ja/hooks/chroot
+55add3d845bfcd87a9b0949b0da49c0a  usr/share/ubuntu-defaults-ja/keyboard.txt
+8efecaadbbb6cf8f716374edac1bc57a  usr/share/ubuntu-defaults-ja/langpacks.txt
+894dd291a85a0acc96bfb9eeba5f97e7  usr/share/ubuntu-defaults-ja/language.txt

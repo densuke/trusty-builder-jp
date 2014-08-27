@@ -1,0 +1,106 @@
+ubuntu-defaults-ja (14.04-0ubuntu1~ja6) trusty; urgency=medium
+
+  * 20_ubuntu-defaults-ja.gschema.override: do not control 
+      "org.gnome.settings-daemon.plugins.keyboard".
+
+ -- Ikuya Awashiro <ikuya@fruitsbasket.info>  Sun, 11 May 2014 15:37:48 +0900
+
+ubuntu-defaults-ja (14.04-0ubuntu1~ja5) trusty; urgency=medium
+
+  * Use trusty apt config file.
+  * hooks/chroot: replace http://archive.ubuntu.com to http://jp.archive.ubuntu.com
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Sat, 22 Apr 2014 08:56:39 +0900
+
+ubuntu-defaults-ja (14.04-0ubuntu1~ja4) trusty; urgency=medium
+
+  * depends.txt: add mozc-utils-gui.
+
+ -- Ikuya Awashiro <ikuya@fruitsbasket.info>  Mon, 21 Apr 2014 20:15:48 +0900
+
+
+ubuntu-defaults-ja (14.04-0ubuntu1~ja3) trusty; urgency=medium
+
+  * Use Fcitx by default.
+  * add modified ubuquity-slideshow.
+
+ -- Ikuya Awashiro <ikuya@fruitsbasket.info>  Fri, 04 Apr 2014 20:06:05 +0900
+
+ubuntu-defaults-ja (14.04-0ubuntu1~ja2) trusty; urgency=medium
+
+  * Use ibus-mozc by default.
+
+ -- Ikuya Awashiro <ikuya@fruitsbasket.info>  Fri, 07 Mar 2014 00:03:03 +0900
+
+ubuntu-defaults-ja (14.04-0ubuntu1~ja1) trusty; urgency=medium
+
+  * Repackage for trusty.
+
+ -- Ikuya Awashiro <ikuya@fruitsbasket.info>  Thu, 06 Mar 2014 23:52:42 +0900
+
+ubuntu-defaults-ja (13.10-0ubuntu1~ja1) saucy; urgency=low
+
+  * Repackage for saucy.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Sat, 12 Oct 2013 14:05:02 +0900
+
+ubuntu-defaults-ja (13.04-0ubuntu1~ja1) raring; urgency=low
+
+  * Repackage for raring.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Mon, 22 Apr 2013 23:52:37 +0900
+
+ubuntu-defaults-ja (12.10-0ubuntu1~ja1) quantal; urgency=low
+
+  * Repackage for quantal. 
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Wed, 03 Oct 2012 12:35:11 +0900
+
+ubuntu-defaults-ja (12.04-0ubuntu1~ja5) precise; urgency=low
+
+  * hooks/chroot: purge fonts to reduce the size of a squashfs.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Sat, 15 Sep 2012 02:07:15 +0900
+
+ubuntu-defaults-ja (12.04-0ubuntu1~ja4) precise; urgency=low
+
+  * hooks/chroot: don't purge any fonts.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Mon, 30 Apr 2012 21:14:39 +0900
+
+ubuntu-defaults-ja (12.04-0ubuntu1~ja3) precise; urgency=low
+
+  * hooks/chroot: purge more fonts.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Sat, 21 Apr 2012 13:35:19 +0900
+
+ubuntu-defaults-ja (12.04-0ubuntu1~ja2) precise; urgency=low
+
+  * i18n/langpacks.txt: change 'ja complete' to 'ja'
+  * depends.txt: add essential packages for Japanese users.
+  * hooks/chroot: purge fonts-nanum to reduce the size of a squashfs.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Wed, 18 Apr 2012 10:48:33 +0900
+
+ubuntu-defaults-ja (12.04-0ubuntu1~ja1) precise; urgency=low
+
+  * debian/control: Bump Standards-Version to 3.9.3
+  * hooks/chroot:
+    change url to precise
+    omit overwriting /etc/fonts/conf.avail/69-language-selector-ja-jp.conf
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Sat, 14 Apr 2012 05:36:13 +0900
+
+ubuntu-defaults-ja (11.10-0ubuntu1~ja2) oneiric; urgency=low
+
+  * hooks/chroot:
+    Overwrite /etc/fonts/conf.avail/69-language-selector-ja-jp.conf to 
+    remove <test name="lang" compare="contains"><string>ja</string></test>. 
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Thu, 13 Oct 2011 14:59:49 +0900
+
+ubuntu-defaults-ja (11.10-0ubuntu1~ja1) oneiric; urgency=low
+
+  * Initial release.
+
+ -- Jun Kobayashi <jkbys@ubuntu.com>  Sat, 01 Oct 2011 01:40:43 +0900

@@ -1,0 +1,19 @@
+Source: ubuntu-defaults-ja
+Section: metapackages
+Priority: optional
+Maintainer: Jun Kobayashi <jkbys@ubuntu.com>
+Build-Depends: debhelper (>= 9.20130630ubuntu1),
+ ubuntu-defaults-builder
+Standards-Version: 3.9.3
+
+Package: ubuntu-defaults-ja
+Architecture: all
+Depends: ${misc:Depends},
+ ${ubuntudefaults:Depends}
+Recommends: ${ubuntudefaults:Recommends}
+Provides: ubuntu-default-settings
+Conflicts: ubuntu-default-settings
+Description: Default settings for Japanese/Japan
+ This package contains customized default settings for the Japanese Ubuntu
+ Remix.
+

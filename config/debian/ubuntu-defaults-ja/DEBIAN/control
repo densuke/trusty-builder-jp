@@ -1,0 +1,13 @@
+Package: ubuntu-defaults-ja
+Version: 14.04-0ubuntu1~ja6
+Architecture: all
+Maintainer: Jun Kobayashi <jkbys@ubuntu.com>
+Installed-Size: 11
+Depends: dconf-gsettings-backend | gsettings-backend, language-pack-ja, language-pack-gnome-ja, libreoffice-l10n-ja, libreoffice-help-ja, firefox-locale-ja, thunderbird-locale-ja, fonts-takao-pgothic, fonts-takao-gothic, fonts-takao-mincho, poppler-data, cmap-adobe-japan1, ibus-anthy, ibus-mozc, kasumi, im-setup-helper, fcitx, fcitx-mozc, fcitx-libs-qt5, fcitx-frontend-qt5, mozc-utils-gui
+Conflicts: ubuntu-default-settings
+Provides: ubuntu-default-settings
+Section: metapackages
+Priority: optional
+Description: Default settings for Japanese/Japan
+ This package contains customized default settings for the Japanese Ubuntu
+ Remix.

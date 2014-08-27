@@ -1,0 +1,2 @@
+ubuntudefaults:Depends=language-pack-ja, language-pack-gnome-ja, libreoffice-l10n-ja, libreoffice-help-ja, firefox-locale-ja, thunderbird-locale-ja, fonts-takao-pgothic, fonts-takao-gothic, fonts-takao-mincho, poppler-data, cmap-adobe-japan1, ibus-anthy, ibus-mozc, kasumi, im-setup-helper, fcitx, fcitx-mozc, fcitx-libs-qt5, fcitx-frontend-qt5, mozc-utils-gui
+misc:Depends=dconf-gsettings-backend | gsettings-backend

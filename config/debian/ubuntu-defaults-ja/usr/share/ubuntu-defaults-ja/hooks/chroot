@@ -1,0 +1,19 @@
+#!/bin/sh
+set -e
+
+# Hook for building live images
+#
+# This script is run in the built chroot after all packages are installed,
+# before it is packed into a squashfs. This is where you can apply extra tweaks
+# to the live system.
+#apt-get purge --auto-remove -y libreoffice-help-en-us
+wget -q https://www.ubuntulinux.jp/ubuntu-ja-archive-keyring.gpg -O- | sudo apt-key add -
+wget -q https://www.ubuntulinux.jp/ubuntu-jp-ppa-keyring.gpg -O- | sudo apt-key add -
+wget -q https://www.ubuntulinux.jp/sources.list.d/trusty.list -O /etc/apt/sources.list.d/ubuntu-ja.list
+if [ -f /etc/apt/sources.list.d/zz-sources.list ]
+then
+  sed -i -e 's/http:\/\/archive\.ubuntu\.com/http:\/\/jp\.archive\.ubuntu\.com/' /etc/apt/sources.list.d/zz-sources.list
+fi
+apt-get update
+apt-get upgrade --yes
+apt-get clean
