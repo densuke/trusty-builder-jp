@@ -37,7 +37,7 @@
     $ wget http://archive.ubuntulinux.jp/ubuntu/pool/main/u/ubuntu-defaults-ja/ubuntu-defaults-ja_14.04-0ubuntu1~ja6.dsc
     $ wget http://archive.ubuntulinux.jp/ubuntu/pool/main/u/ubuntu-defaults-ja/ubuntu-defaults-ja_14.04-0ubuntu1~ja6.tar.gz
     $ dpkg-source -x ubuntu-defaults-ja_14.04-0ubuntu1~ja6.dsc
-    $ mv * config
+    $ mv ubuntu-defaults-ja-14.04 config
     (いじる)
     $ docker run --rm --privileged -v $TARGET:/target -v $(PWD)/config:/builder/config densuke/trusty-builder-jp 
 
