@@ -36,5 +36,5 @@ WORKDIR=build.${RANDOM}
 mkdir ${DEST}/${WORKDIR} && cd ${DEST}/${WORKDIR}
 trap "cd ${DEST}; rm -fr ${DEST}/${WORKDIR}" 0
 set -x
-http_proxy=${http_proxy} ${BUILDER} --package ${WORK}/*.deb --components main,restricted,universe,multiverse --ppa japaneseteam/ppa
-[ -f ${IMAGE} ] && mv -v ${IMAGE} ${DEST}/
+http_proxy=${http_proxy} nice ${BUILDER} --package ${WORK}/*.deb --components main,restricted,universe,multiverse --ppa japaneseteam/ppa
+[ -f ${IMAGE} ] && mv -v ${IMAGE} ${DEST}/ 
