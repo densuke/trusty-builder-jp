@@ -1,4 +1,4 @@
-FROM densuke/trusty-jp:latest
+FROM densuke/ubuntu-jp-remix:trusty
 MAINTAINER densuke
 
 RUN apt-get update
